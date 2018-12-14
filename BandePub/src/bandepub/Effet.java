@@ -24,7 +24,6 @@ abstract class Effet  {
     
     Effet(String message){
         this.message = message;
-        b.setMessage(message);
     }
     
     

@@ -17,15 +17,15 @@ public class ChangerCouleur extends Effet {
     }
 
     void afficheToiSur() {
-        b.getMessage();
+        b.setMessage(message);
 	b.sleep(400);
 	b.setBackground(Color.DARK_GRAY);
 	b.sleep(400);
-	b.setForeground(Color.YELLOW);
+	b.setBackground(Color.YELLOW);
 	b.sleep(400);
-	b.setFont(font);
+	b.setBackground(Color.RED);
         b.sleep(400);
-	b.setForeground(fore);
+	b.setBackground(Color.BLUE);
         b.sleep(400);
 	b.setBackground(back);
         b.sleep(400);

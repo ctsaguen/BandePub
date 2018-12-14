@@ -20,6 +20,7 @@ public class Zoom extends Effet {
     
     public void afficheToiSur(
     ){
+        b.setMessage(message);
 	b.sleep(120);
 	for (int i = 5; i < 60 ; i+=5) {
 		b.setFont(new Font("Dialog", Font.BOLD, 5+i));

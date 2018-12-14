@@ -19,14 +19,13 @@ public class TeleType extends Effet {
     }
     
     public void afficheToiSur(){
+        b.setMessage(message);
        String values[] = message.split("");
        String textFinal = values[0];
        for (int i = 1; i <= values.length ; i++) {
            b.setMessage(textFinal);
            textFinal = textFinal + values[i]; 
            b.sleep(200);
-
-
 }
     }
 }

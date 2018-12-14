@@ -20,6 +20,7 @@ public class BandePub {
      * @param args the command line arguments TEST
      */
     public static void main(String[] args) {
+       
         Clignoter cli = new Clignoter("je clignote un peu mieu");
         //cli.afficheToiSur();
         ChangerCouleur chan = new ChangerCouleur("couleur");
@@ -32,14 +33,17 @@ public class BandePub {
         //tel.afficheToiSur();
         Zoom zo = new Zoom("je Zoom");
         //zo.afficheToiSur();
+        ChangerCouleurText chant = new ChangerCouleurText("couleur du texte");
+        //chant.afficheToiSur();
         Scenario scene = new Scenario();
+        scene.AjouterEffet(chant, 3);
         scene.AjouterEffet(zo, 2);
         scene.AjouterEffet(cli, 1);
         scene.AjouterEffet(jeu, 1);
-        scene.AjouterEffet(tel, 1);
+        scene.AjouterEffet(chan, 2);
         scene.AjouterEffet(rot, 2);
+         scene.AjouterEffet(tel, 1);
         scene.LireScenario();
-
     }
     
 }

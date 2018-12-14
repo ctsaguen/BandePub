@@ -16,6 +16,7 @@ public class Clignoter extends Effet {
         super(message);
     }
     public void afficheToiSur(){
+        b.setMessage(message);
        for (int i = 1; i < 10 ; i++) {
 		b.sleep(700);
                 b.setMessage(" ");

@@ -19,8 +19,6 @@ public class Rotation extends Effet {
     }
 
     void afficheToiSur() {
-
-	b.sleep(700);
 	b.setMessage(message);
 	b.sleep(100);
 	for (int i = 0; i <= 100; i++) {
